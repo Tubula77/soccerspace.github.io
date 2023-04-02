@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(66, 21, 21);
+}
+body{
+    background-color: rgb(235, 230, 230);
+    /* background-image: url(soccer-g36b521917_1920.jpg);
+    background-position: center;
+    background-size: cover; */
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(142, 172, 236);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 4px black;
+}
+.logo{
+    max-width: 100%;
+    max-height: 1px;
+
+}
+.menu-btn{
+    display: none;
+}
+.navbar {
+   margin: 0 auto; 
+   width: 90%;
+   max-width: 988px;
+    
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 70px;
+    
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(97, 42, 42);
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar ul li a:hover{
+    color: gray;
+    transition: 0.7s ease;
+}
+main{
+    text-align: center;
+}
+.football{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8px;
+    width: 68%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+caption{
+    color: greenyellow;
+    font-size: 2rem;
+    filter: drop-shadow(0 0 4px crimson);
+}
+section{
+    margin-bottom: 30px;
+
+}
+.league{
+    border: 1px solid wheat;
+}
+
+table{
+    width: 300px;
+}
+th{
+    text-align: left;
+    margin-left: 200px;
+}
+table, th td{
+    border: 1px border white;
+    border-collapse: collapse;
+}
+.sect{
+    margin-left: 50px;
+    border: 1px solid wheat;
+    margin-right: 10px;
+}
+.news{
+     display: flex;
+     margin-left: 10px; 
+     align-items: center;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+
+}
+.news img{
+    border-radius: 8px;
+}
+.text{
+    margin: 0 30px;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 50px;
+    border: 1px solid wheat;
+    margin-right: 10px;
+}
+.worldcup{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    border: 2px solid rgb(48, 11, 11);
+}
+.argentina{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.vid video{
+    border-radius: 10px; 
+    object-fit: contain;
+    /* border: 1px solid black; */
+   
+}
+
+
+
+
+footer{
+    background-color: rgb(1, 17, 17);
+    width: 100%;
+    height: 70vh;
+    color: aliceblue;
+    
+}
+.footer{
+    color: aliceblue;
+    display: flex;
+    /* justify-content: space-between; */
+}
+.footer ul {
+    display: inline-block;
+    margin: 70px;
+}
+.section{
+    display: flex;
+    width: 100%;
+}
+.team{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:1300px) {
+    header{
+     
+        padding: 0 20px;
+    }
+    
+}
+@media only screen and (max-width:1100px) {
+    header{
+        padding: 0 30px;
+        
+    }
+    
+}
+@media only screen and (max-width:900px) {
+    .menu-btn{
+        display: block;
+        cursor: pointer;    
+    }
+    .menu-btn .line{
+        width: 30px;
+        height: 3px;
+        background: rgb(43, 15, 15);
+        margin: 6px;
+    }
+    .navbar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: rgb(245, 245, 240);
+        transition: 0.2s;
+        overflow: hidden;
+       
+    }
+    .navbar.active{
+        height: 250px;
+    }
+  
+    .navbar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        /* opacity: 0; */
+    
+    } 
+    .navbar ul li{
+        display: block;
+        margin: 10px;
+        
+    }
+    .navbar.active ul{
+        /* opacity: 1; */
+    }
+
+    .navbar ul li a{
+        margin-bottom: 12px;
+    }
+   
+}
+
+
+
+
